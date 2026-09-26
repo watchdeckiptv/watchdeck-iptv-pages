@@ -74,19 +74,12 @@
       }
 
       .brand-mark {
-        display: grid;
+        display: block;
         width: 44px;
         height: 44px;
-        place-items: center;
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        border-radius: 14px;
-        background: linear-gradient(135deg, rgba(124, 58, 237, 0.95), rgba(34, 211, 238, 0.5));
-        box-shadow: 0 14px 34px rgba(124, 58, 237, 0.32);
-      }
-
-      .brand-mark svg {
-        width: 24px;
-        height: 24px;
+        border-radius: 13px;
+        object-fit: cover;
+        box-shadow: 0 14px 34px rgba(2, 8, 23, 0.32);
       }
 
       .nav-links {
@@ -374,12 +367,7 @@
     <main class="page">
       <nav class="nav" aria-label="Seitennavigation">
         <div class="brand">
-          <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M7 12.5 10.2 5l3.6 5.2L18 7l-1.4 10H7.4L7 12.5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
-              <path d="M8 20h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-            </svg>
-          </span>
+          <img class="brand-mark" src="app-logo.png" alt="WatchDeck IPTV Logo" />
           <span>WatchDeck IPTV</span>
         </div>
         <div class="nav-links">

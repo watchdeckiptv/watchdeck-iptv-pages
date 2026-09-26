@@ -55,8 +55,19 @@
       }
 
       .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
         font-weight: 950;
         letter-spacing: 0.02em;
+      }
+
+      .brand img {
+        width: 44px;
+        height: 44px;
+        border-radius: 13px;
+        object-fit: cover;
+        box-shadow: 0 14px 34px rgba(2, 8, 23, 0.32);
       }
 
       .back {
@@ -167,7 +178,10 @@
   <body>
     <main>
       <nav class="top" aria-label="Navigation">
-        <div class="brand">WatchDeck IPTV</div>
+        <div class="brand">
+          <img src="app-logo.png" alt="WatchDeck IPTV Logo" />
+          <span>WatchDeck IPTV</span>
+        </div>
         <a class="back" href="privacy.html">Datenschutz ansehen</a>
       </nav>
 
